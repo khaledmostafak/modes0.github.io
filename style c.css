@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background: var(--primary-color);
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.75rem 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background: #d342ff;
+}
+
+.btn a{
+    color: #49157a;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: #d7b4f8;
+}
+
+.btn:active{
+    transform: scale(0.96);
+}
+
+.btn a:hover{
+    color: #ffffff;
+}
+
+.nav-container{
+    background: #3e3368;
+    color: #f0f4f8;
+}
+
+nav{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    font-size: 16px;
+}
+
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex: 2.5;
+    
+}
+
+nav ul li a{
+    display: block;
+    color: #f0f4f8;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+nav ul li a:hover{
+    color: rgb(16, 165, 165);
+}
+
+:root{
+    --primary-color: #d7b4f8;
+    --secondary-color: #212121;
+}
+
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;  
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+.contac{
+    width: 90%;
+    max-width: 1366px;
+    margin: 3rem auto;
+    height: 100%;
+    padding: 2rem 0;
+    text-align: center;
+
+}
+
+p{
+    color: var(--secondary-color);
+}
+label,input,textarea{
+    font-family: inherit;
+    font-size: 16px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding:  0;
+    width: 100%;
+}
+
+form .btn{
+    width: 100px;
+    align-self: center;
+}
+
+input,textarea{
+    width: 80%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    padding: 0.75rem 2rem;
+    margin: 0 auto;
+}
+
+label,input,textarea{
+    margin-bottom: 1.5rem;
+}

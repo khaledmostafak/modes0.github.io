@@ -1,0 +1,98 @@
+div.polariod{
+    width: 25%; 
+    background-color: #f5fcf0;
+    box-shadow: 0 7px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 9px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 30px;
+    float: left;
+    margin-top: 25px;
+    display: block;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+    margin-inline-start: 5%;
+  }
+  div.container {
+    text-align: none;
+    padding: 4px 5px;
+  }
+  * {
+      box-sizing: border-box;
+  }
+  body {
+      margin: 0;
+  }
+  /* Style the header */
+  .header {
+    background-image: url(images/Background.jpeg) ;
+    background-repeat: repeat-x;
+    color: #ebf3e9;
+    padding: 170px 300px;
+    text-align: center;
+  }
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #3e3368;
+    position: sticky;
+    top: 0;
+  }
+  .header a{
+    text-decoration: none;
+  }
+  /* Style the topnav links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f0f4f8;
+    text-align: center;
+    padding: 25px;
+    font-size: 23px;
+    text-decoration: none;
+  }
+  /* Change color on hover */
+  .navbar a:hover {
+    color: #10a5a5;
+  }    
+      img{
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 250px; 
+        height: 250px;
+      }
+   del{
+     color: maroon;
+   } 
+   .btn{
+      display: inline-block;
+      margin-top: 10px;
+      border-radius: 15%;
+      background-color: #3e3368;
+      color: #fff;
+      padding: 10px 15px;
+      font-size: 25px;
+      cursor: pointer;
+      text-decoration: none;
+   } 
+   .btn:hover{
+    background: aqua;
+}
+.icon{
+    background-color: #fff;
+    border: 5px solid #3e3368;
+    display: flex;
+    align-items: center;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+button {
+  background-color: #3e3368;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 15%;
+  cursor: pointer;
+}
+button:hover{
+  background: aqua;
+}

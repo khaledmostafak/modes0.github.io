@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel ="stylesheet" href="style.css"></link>
+    
+  <title>payment</title>
+  
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <a  class="logo">modës</a>
+            <ul> 
+                <li><a href="home.html">Home</a></li>
+                <li><a href="connect with us.html" target="_blank">Connect with us</a></li>
+                <li><a href="#about-container">About</a></li> 
+            </ul>
+        </nav>
+    </div>
+  <div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="Ahmed moh" required>
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com" required>
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="room - street - locality" required>
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="Alex" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="Egypt" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="123 456" required>
+                    </div>
+                </div>
+          
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+                <br>
+
+                <div>
+                    <p>Choose Payment method :</p>
+                    <button type="button" id="buttonCard" onclick="functionCard()" >By Card</button>
+                    <button type="button" id="button" onclick="functionCash()" >By Cash</button>
+                   
+                </div>
+
+             
+            <div id="card">
+            <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="IMG-20220503-WA0090.jpg" alt="">
+                </div>
+                     
+                <div class="inputBox">
+                    <span id="confirm">name on card :</span>
+                    <input type="text" placeholder="mr. ahmed moh" required onkeyup="my_confirm()">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444" required>
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022" required>
+                         
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="password" placeholder="1234" required>
+                    </div>
+                </div>
+
+            </div>
+                
+                </div>
+                <div id="cash">
+                <div class="inputBox">
+                    <span>month :</span>
+                    <input type="text" placeholder="january" required>
+                </div>
+                </div>
+
+                
+    </div>
+
+        
+       <input type="submit" value="proceed to checkout" class="submit-btn"  onclick="myVar = setTimeout(myFunction, 300)">        
+       </input>
+       </div>
+          
+</form>           
+</div>
+ <script>
+ function myFunction() {
+                         alert("the process is successful!");
+                  }
+                  
+        //  function my_confirm(){
+        // var text;
+        // switch("text"){
+        // case 0:
+        // "you pressed ok"
+        // break;
+        // defult:
+        // "you pessed cancell!"
+        // }
+         
+         
+         
+         
+         
+         
+         
+        // var text;
+        //  if (confirm("you pay with a card")){
+        //  text="you pressed ok";
+        //  break;
+        //  }
+        //  else{
+        //  text="you pressed cancell";
+        //  }
+        //  document.getElementById("confirm").innerHTML=text;
+        //  }
+
+        var card = document.getElementById("card") ;
+        var cash = document.getElementById("cash") ;
+
+
+        function functionCard(){
+            card.style.display = "block" ;
+            cash.style.display="none";
+            alert("If you want to pay by card press ok !");
+        }
+
+        function functionCash(){
+            cash.style.display = "block" ;
+            card.style.display = "none" ;
+            alert("If you want to pay by cash press ok !");
+
+
+        }
+
+
+     
+   </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="detailes.css">
+   <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+   </script>
+</head>
+<body>
+   <header>
+   <nav class="navbar">
+      <a href="Home.html"><strong>Home</strong></a>
+      <a href="#"><strong>T-shirts</strong></a>
+      <a href = "trousers for men.html" ><strong>Trousers</strong></a>
+      <button onclick="myFunction()">dark mode</button>
+   </nav>
+   </header>
+   <section>
+   <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src= "images/1.1.jpg" style="width:50%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src= "images/1.2.jpg" style="width:50%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src= "images/1.3.jpg" style="width:50%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src= "images/1.4.jpg" style="width:50%">
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src= "images/1.1.jpg" style="width:50%" onclick="currentSlide(1)" alt=" ">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src= "images/1.2.jpg" style="width:50%" onclick="currentSlide(2)" alt=" ">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src= "images/1.3.jpg" style="width:50%" onclick="currentSlide(3)" alt=" ">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src= "images/1.4.jpg" style="width:50%" onclick="currentSlide(4)" alt=" ">
+        </div>
+      </div>
+    </div>
+  </section>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+      <div class="details">
+         <h2>Caesar Solid Gabardine Cargo Pants With Hem</h2>
+         <p><strong>Brand:</strong> Caesar</p>
+         <p><strong>Price:</strong> EGP 180.00</p>
+         <P><del>EGP 300.00</del></P> 
+            <strong>Product details</strong><br>
+            You can shop for anything you need from our store with a very affordable prices and best materials and 
+           <br> it is a really easy way to find good quality products you can check out our store on Jumia.
+           <div class="icons">
+            <input type="number" value="1">
+            <a href="index.html" class="btn">add to cart</a>
+           </div>
+      </div>  
+</body>
+</html>

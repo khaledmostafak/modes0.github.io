@@ -1,0 +1,181 @@
+*{ 
+    font-family: 'Poppins', sans-serif;
+     margin:0; padding:0; box-sizing: border-box; 
+     outline: none; 
+     border:none; 
+     text-transform: capitalize; 
+     transition: all .2s linear;
+      } 
+   .container{ 
+    display: flex; 
+   justify-content:center;
+   align-items:center; 
+   padding:25px;
+   min-height: 100vh; 
+   background: linear-gradient(90deg, #6f4caa 60%, #64449a 40.1%); 
+   } 
+   .container form{ 
+    padding:20px; 
+    width:700px; 
+    background: #fff; 
+    box-shadow: 0 5px 10px rgba(0,0,0,.1); 
+    }
+  .container form .row{
+     display: flex;
+     flex-wrap:wrap;
+         gap:15px; } 
+  .container form .row .col{
+      flex:1 1 250px; 
+      } 
+  .container form .row .col .title{
+     font-size: 20px; 
+     color:#333; 
+     padding-bottom: 5px; 
+     text-transform: uppercase; 
+    } 
+  .container form .row .col .inputBox{ 
+     margin:15px 0;
+    } 
+  .container form .row .col .inputBox span{
+     margin-bottom: 10px; 
+     display: block;
+    } 
+  .container form .row .col .inputBox input{
+     width: 100%; 
+     border:1px solid #ccc; 
+     padding:10px 15px; 
+     font-size: 15px; 
+     text-transform: none;
+      } 
+    .container form .row .col .inputBox input:focus{ 
+        border:1px solid #000;
+         } 
+   .container form .row .col .flex{ 
+     display: flex;
+      gap:15px;
+       } 
+   .container form .row .col .flex .inputBox{ 
+    margin-top: 5px; 
+   } 
+   .container form .row .col .inputBox img{
+     height: 34px;
+     margin-top: 5px; 
+     filter: drop-shadow(0 0 1px #000);
+      }
+    .container form .submit-btn{
+      width: 100%; 
+      padding:12px; 
+      font-size: 17px;
+      background:  #6f4caa ;
+      color:#fff;
+      margin-top: 5px; 
+      cursor: pointer;
+         }
+   .container form .submit-btn{
+      width: 100%; 
+      padding:12px; 
+      font-size: 17px;
+      background:  #6f4caa ;
+      color:#fff;
+      margin-top: 5px; 
+      cursor: pointer;
+     
+  
+     }  
+     .container form .submit-btn :hover{
+         background: #0094ff; 
+         }
+         #cash {
+          display:none;
+          
+        }
+
+          #card{
+          display:none;
+         }
+
+    #buttonCard{
+        cursor:pointer;
+        background-color:white;
+        margin-left:30px;
+        margin-right:20px;
+
+    }
+    
+#buttonCard:hover{
+   background: #c2bcbc; 
+}
+#buttonCash{
+        cursor:pointer;
+        background-color: white;
+        margin-left: 45px;
+       margin-right:20px; 
+
+        
+    }
+  #buttonCash:hover{
+       background: #0094ff; 
+       }
+       .nav-container{
+        background: #3e3368;
+        color: #f0f4f8;
+    }
+    
+    nav{
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1366px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 10vh;
+        font-size: 25px;
+    }
+    
+    nav .logo{
+        font-family: 'Merriweather', serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #f0f4f8;
+        flex: 1.5;
+        text-decoration: none;
+        font-size: 2.4rem;
+        margin-bottom: 0;
+    }
+    
+    nav ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        flex: 2.5;
+    }
+    
+    nav ul li a{
+        display: block;
+        color: #f0f4f8;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover{
+        color:  #8261bc ;
+    }
+    .nav-container{
+      background-color: rgba(0,0,0,.8);
+    }
+ .navselect{
+   display:block;
+   font-weight:1000;
+   font:1rem sans-serif;
+   text-decoration: none;
+   float: right;
+   background-color:rgd(13,0,12);;
+}
+.navoptions{
+  position: absolute;
+  background-color:rgd(13,0,12);
+  z-index:1;
+  float: right;
+  color:white;
+}
+.navselect:hover { background-color:#64449a; }
+.navoptions:hover { background-color:#64449a; }

@@ -1,0 +1,123 @@
+*{ 
+   padding: 0;
+   margin: 0;
+  } 
+
+nav{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1366px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    font-size: 16px;
+}
+nav .logo{
+   font-family: 'Merriweather', serif;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: #f0f4f8;
+   flex: 1.5;
+   text-decoration: none;
+   font-size: 2.4rem;
+   margin-bottom: 0;
+ }
+nav ul{
+    display: flex;
+     list-style-type: none;
+     justify-content: space-between;
+     flex: 2.5;
+}
+ nav ul li a{
+    display: block;
+    color: #f0f4f8;
+    text-decoration: none;
+}
+nav ul li a:hover{ color:  #8261bc ; }
+
+.nav-container{ background-color: rgba(0,0,0,.8);}
+
+
+
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;  
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+
+h1{
+  padding-top: 5px;
+  }
+ 
+p{
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+ }
+ 
+.size{
+  width: 130px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 80%;
+  }
+  
+button{
+  background-color:#000000;
+  color: white;
+  width: 130px;
+  float:left;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 80%;
+}
+
+aside {
+  width: 50%;
+  padding-left: 30px;
+  padding-right: 50px;
+  margin-left: 140px;
+  margin-top: 130px;
+  float:left;
+  font-style: italic;
+  font-size: 230%;
+   line-height:2;
+  background-color:#f2f2f2;
+}
+.pants{ padding-left:400px; }
+
+.navselect{
+   display:block;
+   font-weight:1000;
+   font:1rem sans-serif;
+   text-decouration: none;
+   float: right;
+   backgroung-color:rgd(13,0,12);;
+}
+.navoptions{
+  position: absolute;
+  backgroung-color:rgd(13,0,12);
+  z-index:1;
+  float: right;
+  color:white;
+}
+.navselect:hover { backgroung-color:#64449a; }
+.navoptions:hover { backgroung-color:#64449a; }
